@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 .container {
   display: inline-block;
   cursor: pointer;
@@ -28,24 +28,31 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 </style>
-</head>
-<body>
+  </head>
+  <body>
 
-<p>Click on the Menu Icon to transform it to "X":</p>
+    <p>Click on the Menu Icon to transform it to "X":</p>
 
-<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-<h1>HTML & CSS: We use the same styles as before, only this time, we wrap a container element around each <div> element and we specify a class name for each.
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <h1>HTML & CSS: We use the same styles as before, only this time, we wrap a
+      container element around each <div> element and we specify a class name
+        for each.
 
-    The container element is used to show a pointer symbol when the user moves the mouse over the divs (bars). When it is clicked on, it will execute a JavaScript function that adds a new class name to it, which will change the styles of each horizontal bar: the first and the last bar is transformed and rotated to the letter "x". The bar in the middle fades out and becomes invisible.</h1>
-<script>
+        The container element is used to show a pointer symbol when the user
+        moves the mouse over the divs (bars). When it is clicked on, it will
+        execute a JavaScript function that adds a new class name to it, which
+        will change the styles of each horizontal bar: the first and the last
+        bar is transformed and rotated to the letter "x". The bar in the middle
+        fades out and becomes invisible.</h1>
+      <script>
 function myFunction(x) {
   x.classList.toggle("change");
 }
 </script>
 
-</body>
-</html>
+    </body>
+  </html>
